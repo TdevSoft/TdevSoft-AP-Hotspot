@@ -214,7 +214,7 @@ if [[ $(hostapd --help 2>&1 | grep "\-f") ]]; then
 	hostapd -B "$hotspotconfig" -f "$logfile"
 	while :
 	do
-		[[ $(grep "Using interface" "$logfile") ]] && show_info "Wireless Hotspot active" && show_notify "Wireless Hotspot active" && break
+		[[ $(grep "Using interface" "$logfile") ]] && show_info "Wireless Hotspot active" && show_notify "Wireless Hotspot active-Tanmoy" && break
 		sleep 5
 	done
 	check_connected 2>&1 &
